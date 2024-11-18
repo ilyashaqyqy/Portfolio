@@ -47,11 +47,21 @@
         <p class="section__text__p2">Full Stack Developer</p>
         <div class="btn-container">
           <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/ilyas-EL-HAQYQY.pdf')"
-          >
-            Download CV
-          </button>
+          class="btn btn-color-2"
+          onclick="downloadCV()"
+        >
+          Download CV
+        </button>
+        
+        <script>
+          function downloadCV() {
+            const link = document.createElement('a');
+            link.href = './assets/ilyas-EL-HAQYQY.pdf';
+            link.download = 'ilyas-EL-HAQYQY.pdf';
+            link.click();
+          }
+        </script>
+        
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
             Contact Info
           </button>
