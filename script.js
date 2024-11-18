@@ -5,9 +5,3 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
-function downloadPDF() {
-  const link = document.createElement('a');
-  link.href = './assets/ilyas-EL-HAQYQY.pdf';
-  link.download = 'ilyas-EL-HAQYQY.pdf'; 
-  link.click();
-}
