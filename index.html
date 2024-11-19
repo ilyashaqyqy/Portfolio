@@ -31,7 +31,7 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#skills" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">skills</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
@@ -47,20 +47,11 @@
         <p class="section__text__p2">Full Stack Developer</p>
         <div class="btn-container">
           <button
-          class="btn btn-color-2"
-          onclick="downloadCV()"
-        >
-          Download CV
-        </button>
-        
-        <script>
-          function downloadCV() {
-            const link = document.createElement('a');
-            link.href = './assets/ilyas-EL-HAQYQY.pdf';
-            link.download = 'ilyas-EL-HAQYQY.pdf';
-            link.click();
-          }
-        </script>
+            class="btn btn-color-2"
+            onclick="window.open('./assets/ilyas-EL-HAQYQY.pdf')"
+          >
+            Download CV
+          </button>
         
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
             Contact Info
