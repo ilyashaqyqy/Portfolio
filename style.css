@@ -76,8 +76,8 @@ a:hover {
 }
 
 .hamburger-menu {
-  position: relative;
-  display: inline-block;
+  position: relative; /* Ensure the menu is positioned relative to its container */
+  z-index: 10; /* Place it above other content */
 }
 
 .hamburger-icon {
@@ -97,15 +97,37 @@ a:hover {
 }
 
 .menu-links {
-  position: absolute;
+  position: absolute; /* Position it relative to the hamburger menu */
   top: 100%;
   right: 0;
   background-color: white;
   width: fit-content;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.3 ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 100; 
 }
+
+
+@media (max-width: 768px) {
+  #hamburger-nav .logo {
+    position: absolute;
+    left: 10%;
+    top: 20%; 
+  }
+
+  #hamburger-nav .hamburger-menu {
+    position: absolute;
+    right: 10%; 
+    top: 24%; 
+  }
+
+  #hamburger-nav {
+    position: relative; 
+  }
+}
+
+
 
 .menu-links a {
   display: block;
